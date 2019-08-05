@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./animate.min.css">
+    <link rel="icon" href="./Drawer-Icon.svg">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
+
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./displayPage-en.css">
+    <title>Drawer-bootstrap</title>
+
+</head>
+
+<body>
+    <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <!-- <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="47.000000pt" height="46.000000pt" viewBox="0 0 47.000000 46.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,46.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M16 444 c-24 -23 -24 -405 0 -428 23 -24 405 -24 428 0 16 15 17 33
+17 294 0 115 0 118 -17 134 -23 24 -405 24 -428 0z m168 -21 c-4 -10 -6 -49
+-5 -86 2 -66 2 -68 -18 -58 -31 17 -58 13 -81 -11 -23 -25 -26 -75 -7 -102 12
+-16 14 -16 26 -2 8 9 26 16 41 16 28 0 28 0 24 -61 -3 -60 -3 -61 21 -55 13 3
+27 1 30 -5 4 -6 14 -8 22 -5 9 4 22 1 29 -5 8 -6 20 -9 27 -6 7 2 26 -1 42 -8
+26 -12 10 -13 -130 -14 -174 -1 -185 2 -185 51 0 27 2 28 58 30 l57 2 -57 3
+-58 4 0 152 c0 106 4 157 12 165 7 7 42 12 86 12 67 0 73 -2 66 -17z m244 5
+c21 -21 13 -26 -25 -16 -21 5 -58 13 -83 18 -43 7 -42 7 26 9 43 0 75 -4 82
+-11z m-128 -70 c0 -10 -4 -18 -10 -18 -5 0 -10 -13 -10 -30 0 -27 -3 -30 -30
+-30 -24 0 -30 4 -30 21 0 17 5 20 25 17 25 -5 34 5 15 17 -6 4 -7 11 -4 17 4
+6 -2 6 -15 -1 -18 -10 -21 -9 -21 8 0 16 6 19 40 18 31 -2 40 -6 40 -19z m63
+4 c17 -19 21 -122 5 -122 -5 0 -6 6 -2 13 5 7 0 6 -11 -3 -18 -14 -18 -15 3
+-18 17 -3 22 -10 22 -33 0 -16 -4 -29 -9 -29 -6 0 -8 -9 -6 -19 4 -24 -12 -39
+-53 -47 -38 -8 -45 12 -9 25 12 5 21 11 20 15 -2 3 -3 33 -3 66 0 52 2 60 18
+58 10 -2 17 3 17 12 0 9 -7 14 -17 12 -11 -2 -18 3 -18 13 0 8 9 15 20 15 22
+0 27 24 8 36 -8 5 -9 2 -5 -10 5 -13 2 -17 -11 -14 -9 2 -18 13 -20 26 -4 28
+27 30 51 4z m-205 -104 c27 -27 3 -66 -32 -52 -8 3 -17 1 -21 -5 -11 -18 -25
+-12 -25 11 0 44 50 74 78 46z m122 -31 c0 -32 -3 -37 -13 -28 -8 6 -17 8 -20
+4 -9 -9 -9 -23 1 -22 4 1 14 1 22 0 13 -1 13 -2 0 -11 -12 -7 -12 -12 -2 -22
+17 -17 15 -31 -4 -24 -12 4 -15 2 -10 -9 4 -10 -1 -15 -15 -15 -17 0 -18 3 -8
+21 6 12 7 19 1 15 -6 -3 -10 21 -10 63 l0 68 29 0 c27 0 29 -3 29 -40z m149
+-193 c-12 -14 -63 -20 -57 -6 2 4 17 35 33 69 l30 62 3 -55 c2 -32 -2 -62 -9
+-70z"/>
+<path d="M40 395 c0 -35 1 -36 33 -33 28 3 32 6 32 33 0 27 -4 30 -32 33 -32
+3 -33 2 -33 -33z m46 -10 c-5 -14 -9 -15 -21 -5 -12 10 -13 16 -4 27 15 18 34
+1 25 -22z"/>
+</g>
+</svg> -->
+    <div id="example-nav" class="bg-dark">
+    </div>
+    <div class="alert-keeper">
+            <div class="alert alert-info" role="alert">
+                    <p>This navbar has been added for drawer testing only. <br> <span class="text-danger">To use the main sidebar, use the red button at the bottom right.</span></p>
+            </div>
+    </div>
+    <!-- <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Info</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>this nav bar only for test for.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    <div class="openDrawer">
+        <svg id="i-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none"
+            stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M4 8 L28 8 M4 16 L28 16 M4 24 L28 24" />
+        </svg>
+    </div>
+    <div class="container-fluid">
+        <div class="row flex-xl-nowrap">
+
+            <!-- <form class="bd-search d-flex align-items-center">
+                <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="search" class="form-control ds-input" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off" data-docs-version="4.3" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+                <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button>
+              </form><form class="bd-search d-flex align-items-center">
+                  <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="search" class="form-control ds-input" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off" data-docs-version="4.3" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="ds-dataset-1"></div></span></span>
+                  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button>
+                </form> -->
+            <main class="col-12 col-md-9 col-xl-7 offset-md-3" id="main">
+
+                <div class="main bg-light active" data-nav="1">
+                    <h3 id="start-start">LessCode Drawer</h3>
+                    <p>This library is designed for navbar component from bootstrap framework.
+                        Of course, using "JQeary selector" can be customized.
+                        <br>for example: $(&quot;#example,.example2&quot;).clone(true);
+                        <!-- <a href="#"><span>more information</span></a> -->
+                    </p>
+                    <h3 id="why-drawer">Why</h3>
+                    <ul>
+                        <li>flexible drawer</li>
+                        <li>Easy to use</li>
+                        <li>support rtl</li>
+                        <li>can use custom elements</li>
+                        <li>navbar component Can be used without defined options</li>
+                        <li>....</li>
+                    </ul>
+                    <h3>Install</h3>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 col-code-keeper position-relative">
+                                <div class="clipbord-keeper1">
+                                    <svg class="clipbord-svg" data-codes="11" id="i-clipboard"
+                                    title="" data-original-title="Copy to clipboard"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
+                                        fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                                    </svg>
+                                    <textarea class="clipbordArea" data-codes="11" cols="auto" rows="auto"></textarea>
+                                </div>
+                                <div class="code-keeper">
+                                    <code id="code11">
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 id="quick-start">Quick start</h3>
+                    <p>Start use library with CDN</p>
+                    <h3 id="css">Essential css</h3>
+                    <p>Copy-paste the stylesheet <code class="highlighter-rouge">&lt;link&gt;</code> into your <code
+                            class="highlighter-rouge">&lt;head&gt;</code> before all other stylesheets.</p>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 col-code-keeper position-relative">
+                                <div class="clipbord-keeper1">
+                                    <svg class="clipbord-svg" data-codes="1" id="i-clipboard"
+                                    title="" data-original-title="Copy to clipboard"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
+                                        fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                                    </svg>
+                                    <textarea class="clipbordArea" data-codes="1" cols="auto" rows="auto"></textarea>
+                                </div>
+                                <div class="code-keeper">
+                                    <code id="code1">
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 id="js">Essential js</h3>
+                    <p>It requires jQuery to use this library.</p>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 col-code-keeper position-relative">
+                                <div class="clipbord-keeper1">
+                                    <svg class="clipbord-svg" data-codes="2" id="i-clipboard"
+                                    title="" data-original-title="Copy to clipboard"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
+                                        fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                                    </svg>
+                                    <textarea class="clipbordArea" data-codes="2" cols="auto" rows="auto"></textarea>
+                                </div>
+                                <div class="code-keeper">
+                                    <code id="code2">
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 id="usage">Usage</h3>
+                    <p>Here's how to use left to right. There are two ways for right-to-left:
+                        <ul>
+                            <li>add dir=&quot;rtl&quot; to html tag</li>
+                            <li>add dir:&quot;rtl&quot; to drawer function options</li>
+                        </ul>
+                    </p>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 col-code-keeper position-relative">
+                                <div class="clipbord-keeper1">
+                                    <svg class="clipbord-svg" data-codes="0" id="i-clipboard"
+                                    title="" data-original-title="Copy to clipboard"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
+                                        fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                                    </svg>
+                                    <textarea class="clipbordArea" data-codes="0" cols="auto" rows="auto"></textarea>
+                                </div>
+                                <div class="code-keeper">
+                                    <code id="code0">
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="code-keeper">
+                                    <code id="code1">
+                                        </code>
+                            </div> -->
+                </div>
+                <div class="main bg-light" data-nav="2">
+                    <H3 id="b-0">Examples</H3>
+                    <p>Here are some examples to get you started. After clicking on the play button you can run it again with the navbar(navbar-toggler) button.</p>
+                    <h5 id="b-1">simple drawer</h5>
+                    <p>Use simple bootstrap drawer with no options. <br>
+                        <span class="text-danger">In this example, Resize event is enabled. So it closes as soon as the Drawer is displayed.</span> </p>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 col-code-keeper position-relative">
+                                <div class="clipbord-keeper1">
+                                    <svg class="clipbord-svg" data-codes="5" id="i-clipboard"
+                                    title="" data-original-title="Copy to clipboard"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
+                                        fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                                    </svg>
+                                    
+                                    <svg class="playsvg" id="i-play"
+                                    title="" data-original-title="open drawer" data-placement="bottom"
+                                     data-codes="5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                        <path d="M10 2 L10 30 24 16 Z" />
+                                    </svg>
+                                    <textarea class="clipbordArea" data-codes="5" cols="auto" rows="auto"></textarea>
+                                </div>
+                                <div class="code-keeper">
+                                    <code id="code5">
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 id="b-2">resize & class</h5>
+                    <p>Use resizing event and change class name Options in Drawer.</p>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 col-code-keeper position-relative">
+                                <div class="clipbord-keeper1">
+                                    <svg class="clipbord-svg" data-codes="6" id="i-clipboard"
+                                    title="" data-original-title="Copy to clipboard"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
+                                        fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                                    </svg>
+                                    <svg class="playsvg" id="i-play"
+                                    title="" data-original-title="open drawer" data-placement="bottom"
+                                     data-codes="6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                        <path d="M10 2 L10 30 24 16 Z" />
+                                    </svg>
+                                    <textarea class="clipbordArea" data-codes="6" cols="auto" rows="auto"></textarea>
+                                </div>
+                                <div class="code-keeper">
+                                    <code id="code6">
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 id="b-3">default theme</h5>
+                    <p>How to use the default theme.</p>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 col-code-keeper position-relative">
+                                <div class="clipbord-keeper1">
+                                    <svg class="clipbord-svg" data-codes="7" id="i-clipboard"
+                                    title="" data-original-title="Copy to clipboard"   
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
+                                        fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                                    </svg>
+                                    <svg class="playsvg" id="i-play"
+                                    title="" data-original-title="open drawer" data-placement="bottom"
+                                      data-codes="7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                        <path d="M10 2 L10 30 24 16 Z" />
+                                    </svg>
+                                    <textarea class="clipbordArea" data-codes="7" cols="auto" rows="auto"></textarea>
+                                </div>
+                                <div class="code-keeper">
+                                    <code id="code7">
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 id="b-4">custom element & style</h5>
+                    <p>Below is how to monopolize the style and add elements to the drawer.</p>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 col-code-keeper position-relative" style="padding: 0">
+                                <div class="clipbord-keeper1">
+                                    <svg class="clipbord-svg" data-codes="8" id="i-clipboard"
+                                    title="" data-original-title="Copy to clipboard"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
+                                        fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                                    </svg>
+                                    <svg class="playsvg" id="i-play"
+                                    title="" data-original-title="open drawer" data-placement="bottom"
+                                      data-codes="8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                        <path d="M10 2 L10 30 24 16 Z" />
+                                    </svg>
+                                    <textarea class="clipbordArea" data-codes="8" cols="auto" rows="auto"></textarea>
+                                </div>
+                                <div class="code-keeper">
+                                    <code id="code8">
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 id="b-5">custom enter & exit animation</h5>
+                    <p>In this project Pep's library is used for animation. <span class="text-danger">If you use exitAnimation, you need to call the clearDrawers function</span>  <br>
+                        <a href="https://daneden.github.io/animate.css/">animate.css</a> -
+                        <a href="https://github.com/daneden/animate.css">more information</a></p>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 col-code-keeper position-relative">
+                                <div class="clipbord-keeper1">
+                                    <svg class="clipbord-svg" data-codes="9" id="i-clipboard"
+                                    title="" data-original-title="Copy to clipboard" 
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
+                                        fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                                    </svg>
+                                    <svg class="playsvg" id="i-play"
+                                    title="" data-original-title="open drawer" data-placement="bottom"
+                                      data-codes="9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                        <path d="M10 2 L10 30 24 16 Z" />
+                                    </svg>
+                                    <textarea class="clipbordArea" data-codes="9" cols="auto" rows="auto"></textarea>
+                                </div>
+                                <div class="code-keeper">
+                                    <code id="code9">
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 id="b-6">custom element & show button</h5>
+                    <p>Click the red button at the bottom right to open the driver again</p>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 col-code-keeper position-relative">
+                                <div class="clipbord-keeper1">
+                                    <svg class="clipbord-svg" data-codes="10" id="i-clipboard"
+                                    title="" data-original-title="Copy to clipboard"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
+                                        fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                                    </svg>
+                                    <svg class="playsvg" id="i-play"
+                                    title="" data-original-title="open drawer" data-placement="bottom"
+                                      data-codes="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                        <path d="M10 2 L10 30 24 16 Z" />
+                                    </svg>
+                                    <textarea class="clipbordArea" data-codes="10" cols="auto" rows="auto"></textarea>
+                                </div>
+                                <div class="code-keeper">
+                                    <code id="code10">
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main bg-light" data-nav="3">
+                    <h3 id="api-api">API</h3>
+                    <p>We have all the functions you can use here.</p><br><br>
+                    <h5 id="drawer-function">drawer()</h5>
+                    <p>It is used to create drawer and is the first function to be called. This function takes <span class="text-info go-options">options</span> as input.</p><br><br>
+                    <h5 id="resizeDrawers-function">resizeDrawers()</h5>
+                    <p>This function is used for the resizing event that you have to call into your resizing event. Essential for exitResizeing option.<br>
+                        </p><br><br>
+                    <h5 id="clearDrawer-function">clearDrawer()</h5>
+                    <p>It destroys the drawer.</p><br><br>
+                    <h5 id="drawerShow-function">drawerShow()</h5>
+                    <p>Displays the Drawer.</p>
+    <!--
+    clearDrawer:clearDrawers,
+    drawerShow:drawerShow  -->
+                </div>
+                <div class="main bg-light" data-nav="4">
+                    <h3 id="themes-themes">Themes</h3>
+                    <p>Defined themes that can be used for clothing. click on the theme you want, the drawer will open with that theme.</p>
+                    <div class="container">
+                        <div class="row them-kepper">
+
+                        </div>
+                    </div><br><br><br>
+                    <h5 id="usage-themes">usage</h5>
+                    <p>Substitute your theme number with 0.</p>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 col-code-keeper position-relative">
+                                <div class="clipbord-keeper1">
+                                    <svg class="clipbord-svg" data-codes="3" id="i-clipboard"
+                                    title="" data-original-title="Copy to clipboard"  
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
+                                        fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                                    </svg>
+                                    <textarea class="clipbordArea" data-codes="3" cols="auto" rows="auto"></textarea>
+                                </div>
+                                <div class="code-keeper">
+                                    <code id="code3">
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="main bg-light" data-nav="5">
+                    <h3 id="options-options">Options</h3>
+                    <p>The following table lists all the options that can be used in the drawer function.</p>
+                    <div class="table-responsive-lg">
+                        <table class="table table-bordered table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">name</th>
+                                    <th scope="col">type</th>
+                                    <th scope="col">default</th>
+                                    <th scope="col">description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>class</td>
+                                    <td>object</td>
+                                    <td></td>
+                                    <td>custom class name</td>
+                                </tr>
+                                <tr>
+                                    <td>parentElementItems</td>
+                                    <td>string(elements)<span class="text-info"> or </span>jQuery elements</td>
+                                    <td></td>
+                                    <td>new parent element</td>
+                                </tr>
+                                <tr>
+                                    <td>withNavbarFormsBootstrap</td>
+                                    <td>boolean</td>
+                                    <td>false</td>
+                                    <td>Add navbar form to drawer?</td>
+                                </tr>
+                                <tr>
+                                    <td>withNavItemBootstrap</td>
+                                    <td>boolean</td>
+                                    <td>true</td>
+                                    <td>Add navbar nav-item to drawer?</td>
+                                </tr>
+                                <tr>
+                                    <td>withNavbarBrandBootstrap</td>
+                                    <td>boolean</td>
+                                    <td>true</td>
+                                    <td>Add navbar navbar-brand to drawer?</td>
+                                </tr>
+                                <tr>
+                                    <td>withDropDownBotstrap</td>
+                                    <td>boolean</td>
+                                    <td>true</td>
+                                    <td>Add navbar drop-down to drawer?</td>
+                                </tr>
+                                <tr>
+                                    <td>changeBrandSearchBotstrap</td>
+                                    <td>boolean</td>
+                                    <td>true</td>
+                                    <td>change navbar-brand with input search when navbar in collapse mode?</td>
+                                </tr>
+                                <tr>
+                                    <td>exitResizeing</td>
+                                    <td>boolean</td>
+                                    <td>true</td>
+                                    <td>close drawer when navbar exit from collapse mode?<br>
+                                        <span class="text-danger">(if use resizing event in your project should use
+                                            function <span class="text-info">LessCode.resizeDrawers()</span> in your
+                                            resizing function.)</span></td>
+                                </tr>
+                                <tr>
+                                    <td>customHeadDrawer</td>
+                                    <td>string(elements)<span class="text-info"> or </span>jQuery elements</td>
+                                    <td></td>
+                                    <td>add your custom head to header drawer</td>
+                                </tr>
+                                <tr>
+                                    <td>headerStyle</td>
+                                    <td>css object</td>
+                                    <td></td>
+                                    <td>customized header style.</td>
+                                </tr>
+                                <tr>
+                                    <td>drawerInsideStyle</td>
+                                    <td>css object</td>
+                                    <td></td>
+                                    <td>customized drawer style.</td>
+                                </tr>
+                                <tr>
+                                    <td>drawerItemStyle</td>
+                                    <td>css object</td>
+                                    <td></td>
+                                    <td>customized drawer items style.</td>
+                                </tr>
+                                <tr>
+                                    <td>drawerItemHoverEnterStyle</td>
+                                    <td>css object</td>
+                                    <td></td>
+                                    <td>customized drawer items enter style.</td>
+                                </tr>
+                                <tr>
+                                    <td>drawerItemHoverExitStyle</td>
+                                    <td>css object</td>
+                                    <td></td>
+                                    <td>customized drawer items exit style.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>textStyle</td>
+                                    <td>css object</td>
+                                    <td></td>
+                                    <td>customized drawer texts style.</td>
+                                </tr>
+                                <tr>
+                                    <td>addQuery</td>
+                                    <td>function</td>
+                                    <td></td>
+                                    <td>add your queary to drawer.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>showInsideCloseButton</td>
+                                    <td>boolean</td>
+                                    <td>true</td>
+                                    <td>show close button in drawer?</td>
+                                </tr>
+                                <tr>
+                                    <td>showOutsideCloseButton</td>
+                                    <td>boolean</td>
+                                    <td>false</td>
+                                    <td>show close button outside drawer?</td>
+                                </tr>
+                                <tr>
+                                    <td>insideCloseButton</td>
+                                    <td>string(elements)<span class="text-info"> or </span>jQuery elements</td>
+                                    <td></td>
+                                    <td>customized inside close button.</td>
+                                </tr>
+
+                                <tr>
+                                    <td>outsideCloseButton</td>
+                                    <td>string(elements)<span class="text-info"> or </span>jQuery elements</td>
+                                    <td></td>
+                                    <td>customized outside close button.</td>
+                                </tr>
+                                <tr>
+                                    <td>customJqueryElement</td>
+                                    <td>string(elements)<span class="text-info"> or </span>jQuery elements</td>
+                                    <td></td>
+                                    <td>add your custom element to drawer.</td>
+                                </tr>
+                                <tr>
+                                    <td>customJqueryElementFirst</td>
+                                    <td>boolean</td>
+                                    <td>false</td>
+                                    <td>add custom elements to first element drawer?</td>
+                                </tr>
+                                <tr>
+                                    <td>enterAnimation</td>
+                                    <td>function</td>
+                                    <td></td>
+                                    <td>customized enter animation function.</td>
+                                </tr>
+                                <tr>
+                                    <td>exitAnimation</td>
+                                    <td>function</td>
+                                    <td></td>
+                                    <td>customized exit animation function.</td>
+                                </tr>
+                                <tr>
+                                    <td>defualtStylesPosition</td>
+                                    <td>number</td>
+                                    <td>0</td>
+                                    <td>use default theme.</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div><br><br>
+                    <h3 id="class-objects">class object</h3>
+                    <ul>
+                        <li>drawer: class name main drawer.</li>
+                        <li>drawerInside: class name inside drawer.</li>
+                        <li>drawerOutside: class name outside drawer.</li>
+                        <li>brandKeeper: class name hedear drawer.</li>
+                        <li>showButton: class name button show drawer.("add name custom show drawer button")</li>
+                    </ul>
+                    <h3 id="usage-options">usage</h3>
+                    <p>Define your choice instead of ...</p>
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-12 col-code-keeper position-relative">
+                                <div class="clipbord-keeper1">
+                                    <svg class="clipbord-svg" data-codes="4" id="i-clipboard"
+                                    title="" data-original-title="Copy to clipboard"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20"
+                                        fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2">
+                                        <path d="M12 2 L12 6 20 6 20 2 12 2 Z M11 4 L6 4 6 30 26 30 26 4 21 4" />
+                                    </svg>
+                                    <textarea class="clipbordArea" data-codes="4" cols="auto" rows="auto"></textarea>
+                                </div>
+                                <div class="code-keeper">
+                                    <code id="code4">
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="main bg-light" data-nav="6">
+                    logs
+                 </div> -->
+            </main>
+            <div class="d-none d-xl-block col-xl-2 bd-toc">
+                <!-- start 1 -->
+                <ul class="section-nav">
+                        <li class="toc-entry toc-h2 active" data-nav="1">
+                                <a href="#start-start">Start</a>
+                            </li>
+                    <li class="toc-entry toc-h2 active" data-nav="1">
+                        <a href="#why-drawer">Why</a>
+                    </li>
+                    <li class="toc-entry toc-h2 active" data-nav="1">
+                        <a href="#quick-start">Quick start</a>
+                        <ul>
+                            <li class="toc-entry toc-h3"><a href="#css">CSS</a></li>
+                            <li class="toc-entry toc-h3"><a href="#js">JS</a></li>
+                        </ul>
+                    </li>
+                    <li class="toc-entry toc-h2 active" data-nav="1">
+                        <a href="#usage">Usage</a>
+                    </li>
+                    <!-- end 1 -->
+                    <!-- start 2 -->
+
+                    <!-- <li class="toc-entry toc-h2" data-nav="3"><a href="#drawer-function">drawer</a></li> -->
+                    <li class="toc-entry toc-h2" data-nav="2"><a href="#b-0">Examples</a></li>
+                    <li class="toc-entry toc-h2" data-nav="2"><a href="#b-1">simple drawer</a></li>
+                    <li class="toc-entry toc-h2" data-nav="2"><a href="#b-2">resize & class</a></li>
+                    <li class="toc-entry toc-h2" data-nav="2"><a href="#b-3">default theme</a></li>
+                    <li class="toc-entry toc-h2" data-nav="2"><a href="#b-4">custom element & style </a></li>
+                    <li class="toc-entry toc-h2" data-nav="2"><a href="#b-5">custom enter & exit animation</a></li>
+                    <li class="toc-entry toc-h2" data-nav="2"><a href="#b-6">custom element & show button</a></li>
+                    <!-- <li class="toc-entry toc-h2 active" data-nav="2">
+                        <a href="#quick-start">bootstrap</a>
+                        <ul>
+                            <li class="toc-entry toc-h3"><a href="#b-1">simple drawer</a></li>
+                            <li class="toc-entry toc-h3"><a href="#b-2">resize & class</a></li>
+                            <li class="toc-entry toc-h3"><a href="#b-3">default theme</a></li>
+                            <li class="toc-entry toc-h3"><a href="#b-4">custom element & style </a></li>
+                            <li class="toc-entry toc-h3"><a href="#b-5">custom enter & exit animation</a></li>
+                        </ul>
+                    </li> -->
+                    <!-- <li class="toc-entry toc-h2" data-nav="3"><a href="#drawer-function">simple bootstrap</a></li>
+                    <li class="toc-entry toc-h2" data-nav="3"><a href="#resizeDrawers-function">bootstrap drawer</a></li>
+                    <li class="toc-entry toc-h2" data-nav="3"><a href="#clearDrawer-function">clearDrawer</a></li>
+                    <li class="toc-entry toc-h2" data-nav="3"><a href="#drawerShow-function">drawerShow</a></li> -->
+
+                    <!-- end 3 -->
+                    <!-- start 3 -->
+                    <li class="toc-entry toc-h2" data-nav="3"><a href="#api-api">API</a></li>
+                    <li class="toc-entry toc-h2" data-nav="3"><a href="#drawer-function">drawer</a></li>
+                    <li class="toc-entry toc-h2" data-nav="3"><a href="#resizeDrawers-function">resizeDrawers</a></li>
+                    <li class="toc-entry toc-h2" data-nav="3"><a href="#clearDrawer-function">clearDrawer</a></li>
+                    <li class="toc-entry toc-h2" data-nav="3"><a href="#drawerShow-function">drawerShow</a></li>
+
+                    <!-- end 3 -->
+                    <!-- start 4 -->
+                    <li class="toc-entry toc-h2" data-nav="4"><a href="#themes-themes">Themes</a></li>
+                    <li class="toc-entry toc-h2" data-nav="4"><a href="#usage-themes">usage</a></li>
+                    <!-- end 4 -->
+                    <!-- start 5 -->
+                     <li class="toc-entry toc-h2" data-nav="5"><a href="#options-options">Options</a></li>
+                    <li class="toc-entry toc-h2" data-nav="5"><a href="#usage-options">usage</a></li>
+                    <li class="toc-entry toc-h2" data-nav="5"><a href="#class-objects">class objects</a></li>
+                    <!-- end 5 -->
+                    <!-- <li class="toc-entry toc-h2"><a href="#quick-start">Quick start</a>
+                        <ul>
+                            <li class="toc-entry toc-h3"><a href="#css">CSS</a></li>
+                            <li class="toc-entry toc-h3"><a href="#js">JS</a></li>
+                        </ul>
+                    </li>
+                    <li class="toc-entry toc-h2"><a href="#important-globals">Important globals</a>
+                        <ul>
+                            <li class="toc-entry toc-h3"><a href="#html5-doctype">HTML5 doctype</a></li>
+                            <li class="toc-entry toc-h3"><a href="#responsive-meta-tag">Responsive meta tag</a></li>
+                            <li class="toc-entry toc-h3"><a href="#box-sizing">Box-sizing</a></li>
+                            <li class="toc-entry toc-h3"><a href="#reboot">Reboot</a></li>
+                        </ul>
+                    </li>
+                    <li class="toc-entry toc-h2"><a href="#community">Community</a></li> -->
+
+                </ul>
+            </div>
+            <div class="d-none d-md-flex col-3 px-1 bg-dark overflow-auto position-fixed" id="sticky-sidebar">
+                <ul class="nav flex-column" style="height: 100vh;padding-top: 50px;">
+                    <li class="nav-item active" data-nav="1">
+                        <a class="nav-link" href="#">Getting Start</a>
+                    </li>
+                    <li class="nav-item" data-nav="2">
+                        <a class="nav-link" href="#">Example</a>
+                    </li>
+                    <li class="nav-item" data-nav="3">
+                        <a class="nav-link" href="#">API</a>
+                    </li>
+                    <li class="nav-item" data-nav="4">
+                        <a class="nav-link" href="#">Themes</a>
+                    </li>
+                    <li class="nav-item" data-nav="5">
+                        <a class="nav-link" href="#">Options</a>
+                    </li>
+                    <!-- <li class="nav-item"data-nav="6">
+                        <a class="nav-link" href="#">Change log</a>
+                      </li>  -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container-fluid">
+        <div class="row py-3">
+            <div class="col-3 order-2" id="sticky-sidebar">
+                <div class="sticky-top">
+                    ...
+                </div>
+            </div>
+            <div class="col" id="main">
+                <h1>Main Area</h1>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                ...
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="container-fluid">
+        <div class="row flex-xl-nowrap">
+            <div class="col overflow-auto" style="background: red">
+a
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+a
+            </div>
+            <div class="col-3" style="background: yellow">
+                <div class="o-y">
+                    aaaaaaaaaaaaaaa
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <script src="./jquery-3.3.1.slim.min.js">
+    </script>
+    <!-- integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script> -->
+    <script src="./popper.min.js">
+    </script>
+    <!-- integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script> -->
+    <script src="./bootstrap.min.js">
+    </script>
+    <!-- integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script> -->
+    <!-- <script src="./drawer-bootstrap.js"></script> -->
+    <script src="lib/drawer-bootstrap4.js"></script>
+    <script src="./displayPage.js"></script>
+    <script>
+    // onresize=fu
+        
+	// function(t){i(t.trigger).attr("title","Copied!").tooltip("_fixTitle").tooltip("show").attr("title","Copy to clipboard").tooltip("_fixTitle");
+	// t.clearSelection()
+	// }
+    </script>
+    <!-- <script>drawers()</script> -->
+</body>
+
+</html>
