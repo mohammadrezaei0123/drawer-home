@@ -1589,7 +1589,7 @@ npm i lesscode-drawer
       //    var copyText = document.getElementById("clipboardCopy");
       //    copyText.value = stringCode0;
       // $("#triggerCopy").on('click',function () {
-      //     console.log("object")
+      //     ////console.log("object")
       //     copyFunc(stringCode0)  
       // })
       // $("#triggerCopy").trigger('click')
@@ -1616,16 +1616,16 @@ npm i lesscode-drawer
       //    $('#code1').data("code", (allcodes.length - 1))
 
       function appenderCodes(id, st) {
-        // console.log(st)
+        // ////console.log(st)
         let code = codeToCode(st)
-        // console.log(code)
+        // //console.log(code)
         $('#' + id).append(code).wrap("<pre></pre>");
         $('#' + id).data("code", (allcodes.length - 1))
 
       }
       $('.playsvg').on('click', function () {
         let codes = $(this).data('codes');
-        // console.log(allcodes[codes])
+        // //console.log(allcodes[codes])
         play(codes);
       })
 
@@ -1817,7 +1817,7 @@ npm i lesscode-drawer
             textKeeper += element
           }
 
-          // console.log(element)
+          // //console.log(element)
         }
         if (textKeeper.length > 0) {
           value += textKeeper
@@ -1906,7 +1906,7 @@ npm i lesscode-drawer
       $('.openDrawer').on('click', function () {
         let navs=$(".nav").children().clone(true,true)
         $(navs).on('click',changerNav);
-        // console.log(navs)
+        // //console.log(navs)
         LessCode.drawer({
           exitResizeing: false,
           withNavItemBootstrap: false,
@@ -1926,8 +1926,8 @@ npm i lesscode-drawer
           defualtStylesPosition: 8
         })
         LessCode.drawerShow()
-        // console.log('open')
-        // console.log($(".nav .nav-item").clone(true, true))
+        // //console.log('open')
+        // //console.log($(".nav .nav-item").clone(true, true))
         // LessCode.drawer({
         //   //  class:{
         //   //    drawer:"dfs",
@@ -1940,7 +1940,7 @@ npm i lesscode-drawer
         //   customJqueryElement:$(".nav .nav-item").clone(true, true),
         //    defualtStylesPosition:0,
         //   addQuery:function(){
-        //     console.log('query add');
+        //     //console.log('query add');
         //   }
         //  })
 
@@ -2053,7 +2053,7 @@ npm i lesscode-drawer
               `
         $("#example-nav").append(exampleNav)
         $("#example-nav .navbar .dropdown-item,#example-nav .navbar .nav-item,#example-nav .navbar .form-inline").click(function () {
-          // console.log('click')
+          // //console.log('click')
           $(".alert-keeper").addClass('active');
           setTimeout(function () {
             $(".alert-keeper").removeClass('active');
@@ -2071,7 +2071,7 @@ npm i lesscode-drawer
       for (let index = 0; index < themes.length; index++) {
         const theme = themes[index];
         $('.them-kepper').append(`<div class="theme" data-theme="${index}"><div>theme${index}</div><div>`)
-        // console.log(theme.drawerInsideStyle["background"])
+        // //console.log(theme.drawerInsideStyle["background"])
         $(`.theme[data-theme="${index}"]`).css({
           "background": theme.drawerInsideStyle["background"],
           "color": theme.textStyle["color"]
@@ -2090,7 +2090,7 @@ npm i lesscode-drawer
       }
       $(".theme").on('click', function () {
         let themeData = $(this).data("theme");
-        // console.log(themeData)
+        // //console.log(themeData)
         LessCode.drawer({
           exitResizeing: false,
           customJqueryElement: $(".nav .nav-item").clone(true),
@@ -2102,7 +2102,7 @@ npm i lesscode-drawer
         })
         LessCode.drawerShow()
       })
-      // console.log(themesa)   
+      // //console.log(themesa)   
       $('.go-options').on('click', function () {
         $('.nav-item[data-nav="5"]').trigger('click');
       })
@@ -2169,7 +2169,7 @@ var updateScrollPos = function(e) {
   $(window).scrollTop($(window).scrollTop() + (clickY - e.pageY));
 }
 onresize=function () {
-  // console.log(window.innerWidth)
+  // //console.log(window.innerWidth)
   if(this.window.innerWidth<=768){
     $(document).on({
       'mousemove.drags': function(e) {
@@ -2194,7 +2194,7 @@ onresize=function () {
   } 
 }
 function checkResizingEv() {
-  // console.log(window.innerWidth)
+  // //console.log(window.innerWidth)
   if(this.window.innerWidth<=768){
     $(document).on({
       'mousemove.drags': function(e) {
