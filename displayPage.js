@@ -1634,7 +1634,7 @@ npm i lesscode-drawer
           LessCode.drawer({
             addQuery:function () {
               onresize=function () {
-                checkResizingEv();
+//                 checkResizingEv();
                 LessCode.resizeDrawers()
               }
             }
@@ -2150,71 +2150,71 @@ npm i lesscode-drawer
 //           // $(document).unbind('.drags')
 //         } 
 // })
-$(document).on({
-  'mousemove.drags': function(e) {
-      clicked && updateScrollPos(e);
-  },
-  'mousedown.drags': function(e) {
-      clicked = true;
-      clickY = e.pageY;
-  },
-  'mouseup.drags': function() {
-      clicked = false;
-      $('html').css('cursor', 'auto');
-  }
-});
+// $(document).on({
+//   'mousemove.drags': function(e) {
+//       clicked && updateScrollPos(e);
+//   },
+//   'mousedown.drags': function(e) {
+//       clicked = true;
+//       clickY = e.pageY;
+//   },
+//   'mouseup.drags': function() {
+//       clicked = false;
+//       $('html').css('cursor', 'auto');
+//   }
+// });
 
-var updateScrollPos = function(e) {
-  $('html').css('cursor', 'grabbing');
-  $(window).scrollTop($(window).scrollTop() + (clickY - e.pageY));
-}
-onresize=function () {
-  // //console.log(window.innerWidth)
-  if(this.window.innerWidth<=768){
-    $(document).on({
-      'mousemove.drags': function(e) {
-          clicked && updateScrollPos(e);
-      },
-      'mousedown.drags': function(e) {
-          clicked = true;
-          clickY = e.pageY;
-      },
-      'mouseup.drags': function() {
-          clicked = false;
-          $('html').css('cursor', 'auto');
-      }
-  });
+// var updateScrollPos = function(e) {
+//   $('html').css('cursor', 'grabbing');
+//   $(window).scrollTop($(window).scrollTop() + (clickY - e.pageY));
+// }
+// onresize=function () {
+//   // //console.log(window.innerWidth)
+//   if(this.window.innerWidth<=768){
+//     $(document).on({
+//       'mousemove.drags': function(e) {
+//           clicked && updateScrollPos(e);
+//       },
+//       'mousedown.drags': function(e) {
+//           clicked = true;
+//           clickY = e.pageY;
+//       },
+//       'mouseup.drags': function() {
+//           clicked = false;
+//           $('html').css('cursor', 'auto');
+//       }
+//   });
   
-  var updateScrollPos = function(e) {
-      $('html').css('cursor', 'grabbing');
-      $(window).scrollTop($(window).scrollTop() + (clickY - e.pageY));
-  }
-  }   else{
-    $(document).off('.drags')
-  } 
-}
-function checkResizingEv() {
-  // //console.log(window.innerWidth)
-  if(this.window.innerWidth<=768){
-    $(document).on({
-      'mousemove.drags': function(e) {
-          clicked && updateScrollPos(e);
-      },
-      'mousedown.drags': function(e) {
-          clicked = true;
-          clickY = e.pageY;
-      },
-      'mouseup.drags': function() {
-          clicked = false;
-          $('html').css('cursor', 'auto');
-      }
-  });
+//   var updateScrollPos = function(e) {
+//       $('html').css('cursor', 'grabbing');
+//       $(window).scrollTop($(window).scrollTop() + (clickY - e.pageY));
+//   }
+//   }   else{
+//     $(document).off('.drags')
+//   } 
+// }
+// function checkResizingEv() {
+//   // //console.log(window.innerWidth)
+//   if(this.window.innerWidth<=768){
+//     $(document).on({
+//       'mousemove.drags': function(e) {
+//           clicked && updateScrollPos(e);
+//       },
+//       'mousedown.drags': function(e) {
+//           clicked = true;
+//           clickY = e.pageY;
+//       },
+//       'mouseup.drags': function() {
+//           clicked = false;
+//           $('html').css('cursor', 'auto');
+//       }
+//   });
   
-  var updateScrollPos = function(e) {
-      $('html').css('cursor', 'grabbing');
-      $(window).scrollTop($(window).scrollTop() + (clickY - e.pageY));
-  }
-  }   else{
-    $(document).off('.drags')
-  } 
-}
+//   var updateScrollPos = function(e) {
+//       $('html').css('cursor', 'grabbing');
+//       $(window).scrollTop($(window).scrollTop() + (clickY - e.pageY));
+//   }
+//   }   else{
+//     $(document).off('.drags')
+//   } 
+// }
